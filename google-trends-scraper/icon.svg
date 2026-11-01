@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="t">
+  <title id="t">Google Trends Scraper by Brainfoods Studio</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1426"/>
+      <stop offset="1" stop-color="#16294A"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2DD4BF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#2DD4BF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#5EEAD4" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#5EEAD4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- tile -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect x="3" y="3" width="506" height="506" rx="109" fill="none" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="6"/>
+
+  <g transform="translate(256 262) scale(1.25) translate(-256 -260)">
+
+  <!-- shared 0-100 scale: faint grid -->
+  <g stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="4">
+    <line x1="96" y1="152" x2="416" y2="152"/>
+    <line x1="96" y1="232" x2="416" y2="232"/>
+    <line x1="96" y1="312" x2="416" y2="312"/>
+  </g>
+  <line x1="96" y1="392" x2="416" y2="392" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- area under the lead keyword -->
+  <path d="M96 344 L160 316 L216 330 L272 262 L328 238 L376 176 L416 128 L416 392 L96 392 Z" fill="url(#area)"/>
+
+  <!-- comparison keywords, all on one scale -->
+  <polyline points="96,372 160,356 216,344 272,326 328,300 376,290 416,268"
+            fill="none" stroke="#A78BFA" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="96,330 160,346 216,300 272,312 328,276 376,250 416,226"
+            fill="none" stroke="#F59E0B" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- lead keyword: rising trend -->
+  <polyline points="96,344 160,316 216,330 272,262 328,238 376,176 416,128"
+            fill="none" stroke="#2DD4BF" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- peak marker -->
+  <circle cx="416" cy="128" r="44" fill="url(#glow)"/>
+  <circle cx="416" cy="128" r="18" fill="#ECFEFF"/>
+  <circle cx="416" cy="128" r="9" fill="#2DD4BF"/>
+</g>
+</svg>
